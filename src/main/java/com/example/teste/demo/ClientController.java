@@ -17,7 +17,7 @@ public class ClientController {
 
     @Autowired
     private ClienteRepository cr;
-    
+
     @GetMapping
     public List<Cliente> listar(){
         return cr.findAll();
